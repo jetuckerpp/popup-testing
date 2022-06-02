@@ -13,7 +13,7 @@ function Parent() {
             <Button
                 onClick={() => {
                     const popup = window.open(
-                        '/?type=child',
+                        'https://popup-test.onrender.com/?type=child',
                         POPUP_NAME,
                         WINDOW_PARAMS)
                     setPopupHandler(popup);
