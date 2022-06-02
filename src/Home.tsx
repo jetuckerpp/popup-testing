@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import Parent from "./Parent";
 import Child from "./Child";
+import './Home.scss';
 
 function Home() {
 
@@ -14,7 +15,7 @@ function Home() {
                 <Child />
             ) : (
                 <>
-                    <h1>Home</h1>
+                    <h1>Click the Button</h1>
                     <Parent />
                 </>
             )}
