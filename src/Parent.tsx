@@ -45,7 +45,9 @@ function Parent() {
 
         console.log("doing popupCheck", parentState.popupHandler);
 
-        if (!parentState.popupHandler || !parentState.popupHandler.window) {
+        if (!parentState.popupHandler?.window ||
+            parentState.popupHandler?.closed ||
+            parentState.popupHandler?.window?.closed) {
             console.log("Popup was closed!")
 
             setParentState({
