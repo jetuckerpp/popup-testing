@@ -71,7 +71,7 @@ function Parent() {
 
     return (
         <div className="Parent">
-            {parentState.popupHandler?.window && (
+            {parentState.isOpen && (
                 <div className="overlay">
                     <div className="content">
                         <div className="container">
