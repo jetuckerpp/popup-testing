@@ -21,10 +21,10 @@ function Child() {
 
     return (
         <div>
-            <h1>Child</h1>
+            <h1>Popup</h1>
             {params.get('refer') == 'true' ? (
                 <div>
-                    closing page...
+                    closing popup...
                 </div>
             ) : (
                 <Button
