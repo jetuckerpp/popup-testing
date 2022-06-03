@@ -10,10 +10,13 @@ function Child() {
     
     const redirectAndClose = () => {
         window.location.href = "https://popup-test.herokuapp.com/?type=child&refer=true"
+        //window.location.href = "/?type=child&refer=true"
     }
 
     if (params.get('refer') == 'true') {
-        window.close();
+        //window.close();
+
+        setTimeout(window.close, 500); // specific workaround for for ios
     }
 
     return (
