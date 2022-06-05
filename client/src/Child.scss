@@ -1,0 +1,10 @@
+.Child {
+    h1 {
+        font-size: 80px;
+    }
+    .choices {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
