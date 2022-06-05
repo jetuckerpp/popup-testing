@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "cd server && npm run start:dev",
     "start": "cd server && npm run start",
-    "build": "cd client && npm install && npm run build && cd ../server && npm install"
+    "build:local": "cd client && npm install && npm run build && cd ../server && npm install",
+    "build": "cd client && npm install && npm run build  && rm -fr node_modules && cd ../server && npm install"
   },
   "keywords": [],
   "author": "",

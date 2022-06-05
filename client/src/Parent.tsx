@@ -30,18 +30,14 @@ function Parent() {
             });
     };
 
-    // useEffect(() => {
-    //     getChoice();
-    // }, []);
-
     useEffect(() => {
         getChoice();
     }, [parentState.isOpen]);
 
     const openPopup = () => {
         const popup = window.open(
-            //'https://popup-test.onrender.com/?type=child',
-            '?type=child',
+            'https://popup-test.onrender.com/?type=child',
+            //'?type=child',
             POPUP_NAME,
             WINDOW_PARAMS);
 

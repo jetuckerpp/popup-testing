@@ -2,7 +2,8 @@ import { useLocation } from "react-router-dom";
 import Parent from "./Parent";
 import Child from "./Child";
 import './Home.scss';
-import { useEffect, useState } from "react";
+
+
 
 function Home() {
 
