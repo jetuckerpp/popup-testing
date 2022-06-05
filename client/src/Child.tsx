@@ -11,8 +11,9 @@ function Child() {
     const params = new URLSearchParams(search);
     
     const redirectAndClose = (text: string) => {
-        window.location.href = "https://popup-test.herokuapp.com/?type=child&refer=true"
-        //window.location.href = `/?type=child&refer=true&choice=${text}`
+        const query = `?type=child&refer=true&choice=${text}`;
+        window.location.href = `https://popup-test.herokuapp.com/${query}`;
+        //window.location.href = `/${query}`;
     }
 
     if (params.get('refer') == 'true') {
